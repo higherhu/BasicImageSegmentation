@@ -1,5 +1,7 @@
 // BasicImageSegmentation.cpp : 定义控制台应用程序的入口点。
 //
+// Author: hujiagao@gmail.com
+//
 
 #include <stdio.h>
 #include <tchar.h>
@@ -50,16 +52,8 @@ int main(int argc, char* argv[])
 	vector<SegReq> segList;
 	ConfigReader re;
 	re.GetSegRequire(segList);
-	/*vector<float> args;
-	args.push_back(9);
-	segList.push_back(make_pair("OneCut"+string("Segmentor"), vector<float>()));
-	segList.push_back(make_pair("GrabCut"+string("Segmentor"), vector<float>()));
-	segList.push_back(make_pair("SLIC"+string("Segmentor"), args));
-	segList.push_back(make_pair("MeanShift"+string("Segmentor"), vector<float>(1,11)));
-	segList.push_back(make_pair("SEEDS"+string("Segmentor"), vector<float>(1,266)));
-	segList.push_back(make_pair("GraphBased"+string("Segmentor"), vector<float>(0)));*/
+
 	for (int i = 0; i < segList.size(); i++)
-	//for each (SegReq seg in segList)
 	{
 		SegReq seg = segList[i];
 		string segName = seg.first;
