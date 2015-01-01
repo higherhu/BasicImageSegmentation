@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SLIC">
+      <UniqueIdentifier>{16f699ae-df88-4e39-bcb2-00d13fa4dce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEEDs">
+      <UniqueIdentifier>{c3f45132-40c6-4a16-a2fb-afd18f66e347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeanShift">
+      <UniqueIdentifier>{6cd27ad4-c0cd-4602-befe-1ded861d60c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EfficientGraphBased">
+      <UniqueIdentifier>{b01d190c-1264-4051-9acb-0ea6ee348dd2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicImageSegmentation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShift\ms.cpp">
+      <Filter>MeanShift</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShift\msImageProcessor.cpp">
+      <Filter>MeanShift</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShift\msSys.cpp">
+      <Filter>MeanShift</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShift\RAList.cpp">
+      <Filter>MeanShift</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShift\rlist.cpp">
+      <Filter>MeanShift</Filter>
+    </ClCompile>
+    <ClCompile Include="EfficientGraphBased\segment-image.cpp">
+      <Filter>EfficientGraphBased</Filter>
+    </ClCompile>
+    <ClCompile Include="SEEDS\seeds2.cpp">
+      <Filter>SEEDs</Filter>
+    </ClCompile>
+    <ClCompile Include="SLIC\SLIC.cpp">
+      <Filter>SLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MeanShiftSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SLICSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SEEDSSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphBasedSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GrabCutSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OneCutSegmentor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MeanShift\ms.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShift\msImageProcessor.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShift\msSys.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShift\RAList.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShift\rlist.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShift\tdef.h">
+      <Filter>MeanShift</Filter>
+    </ClInclude>
+    <ClInclude Include="EfficientGraphBased\disjoint-set.h">
+      <Filter>EfficientGraphBased</Filter>
+    </ClInclude>
+    <ClInclude Include="EfficientGraphBased\segment-graph.h">
+      <Filter>EfficientGraphBased</Filter>
+    </ClInclude>
+    <ClInclude Include="EfficientGraphBased\segment-image.h">
+      <Filter>EfficientGraphBased</Filter>
+    </ClInclude>
+    <ClInclude Include="SEEDS\seeds2.h">
+      <Filter>SEEDs</Filter>
+    </ClInclude>
+    <ClInclude Include="SLIC\SLIC.h">
+      <Filter>SLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MeanShiftSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SLICSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SEEDSSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphBasedSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GrabCutSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OneCutSegmentor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

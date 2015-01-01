@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A071A84F-7D72-4135-9F58-EDBDB2EDFD1B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BasicImageSegmentation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OpenCV_248d_x86.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\OpenCV_248_x86.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicImageSegmentation.cpp" />
+    <ClCompile Include="ConfigReader.cpp" />
+    <ClCompile Include="EfficientGraphBased\segment-image.cpp" />
+    <ClCompile Include="GrabCutSegmentor.cpp" />
+    <ClCompile Include="GraphBasedSegmentor.cpp" />
+    <ClCompile Include="MeanShiftSegmentor.cpp" />
+    <ClCompile Include="MeanShift\ms.cpp" />
+    <ClCompile Include="MeanShift\msImageProcessor.cpp" />
+    <ClCompile Include="MeanShift\msSys.cpp" />
+    <ClCompile Include="MeanShift\RAList.cpp" />
+    <ClCompile Include="MeanShift\rlist.cpp" />
+    <ClCompile Include="OneCutSegmentor.cpp" />
+    <ClCompile Include="SEEDSSegmentor.cpp" />
+    <ClCompile Include="SEEDS\seeds2.cpp" />
+    <ClCompile Include="segmentor.cpp" />
+    <ClCompile Include="SLICSegmentor.cpp" />
+    <ClCompile Include="SLIC\SLIC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigReader.h" />
+    <ClInclude Include="EfficientGraphBased\disjoint-set.h" />
+    <ClInclude Include="EfficientGraphBased\segment-graph.h" />
+    <ClInclude Include="EfficientGraphBased\segment-image.h" />
+    <ClInclude Include="GrabCutSegmentor.h" />
+    <ClInclude Include="GraphBasedSegmentor.h" />
+    <ClInclude Include="MeanShiftSegmentor.h" />
+    <ClInclude Include="MeanShift\ms.h" />
+    <ClInclude Include="MeanShift\msImageProcessor.h" />
+    <ClInclude Include="MeanShift\msSys.h" />
+    <ClInclude Include="MeanShift\RAList.h" />
+    <ClInclude Include="MeanShift\rlist.h" />
+    <ClInclude Include="MeanShift\tdef.h" />
+    <ClInclude Include="OneCutSegmentor.h" />
+    <ClInclude Include="SEEDSSegmentor.h" />
+    <ClInclude Include="SEEDS\seeds2.h" />
+    <ClInclude Include="segmentor.h" />
+    <ClInclude Include="SLICSegmentor.h" />
+    <ClInclude Include="SLIC\SLIC.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
