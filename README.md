@@ -7,7 +7,7 @@ Usage
 ======================
 1. Write the algorithms you need to the file "config.ini"
 
-2. Use command "BasicImageSegmentation [ImageName]", or drag the image to the exe file directly.
+2. Use command "BasicImageSegmentation [ImageName]", or drag the image to the exe file directly. If you drag image to the exe, you need to ensure the config.ini and the image in the same directory.
 
 3. For the interactive algorithms, such as GrabCut and OneCut, you need to scribble on the image and press 
 keyboards according to the output tips.
